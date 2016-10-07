@@ -1,2 +1,10 @@
-name: "fsbo.host"
-tasks: {}
+name: "FSBO"
+
+tasks:
+	sass:
+    	src: "lib/**",
+    	dest: "out"
+    	
+    livereload:
+    	endpoint: "NewSpring/norma-livereload"
+    	dev: true
