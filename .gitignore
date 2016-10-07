@@ -3,3 +3,4 @@
 /craft/storage/*
 !/craft/storage/logo/*
 .DS_Store
+/out
