@@ -1,0 +1,265 @@
+{% extends "_layout" %}
+
+{% block content %}
+<section class="background--light-primary header" style="z-index: 2;">
+	<div class="shell constrain-page hard">
+		<div class="grid flush">
+			<div class="grid__item hard">
+				<div class="soft-half text-center">
+					<p class="flush">Interested in a leasing? <a href="tel:+1{{ entry.contactPhone }}" class="btn btn--filled push-quarter-left handheld-flush-left handheld-push-quarter-top">Call Now: {{ entry.contactPhone }}</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section class="background--dark-primary text-light-primary">
+	<div class="shell constrain-page hard">
+		<div class="grid flush">
+			<div class="grid__item hard">
+				<div class="soft-half text-center">
+					<p class="flush"><b>Open House Today! 2-4pm</b> <a href="https://goo.gl/maps/xtQaDqGiB362" target="_blank" class="btn btn--filled push-quarter-left handheld-flush-left handheld-push-quarter-top">Get Directions</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section>
+	<div class="shell overlay--solid background--cover hard" style="background-image: url('{% for image in entry.image %}http://{{ image.url }}{% endfor %}');">
+		<span class="flag">Will Co-Op</span>
+		<div class="anchored-ratio--landscape portable-ratio--landscape handheld-ratio--square overlay__item floating floating--bottom">
+			<div class="floating__item text-light-primary push-bottom handheld-push-half-bottom">
+				<h1 class="push-quarter-bottom handheld-visuallyhidden">Welcome Home</h1>
+				<h5 class="uppercase tracked-wide flush">{{ entry.title }}</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section>
+	<div class="shell constrain-page">
+		<div class="grid text-center flush">
+			<div class="grid__item lap-and-up-two-thirds hard">
+				<div class="palm-wide-soft-ends">
+					<p class="text-larger"><b>This gorgeous 4 bd/3.5 bath home</b> is nestled at the quiet end of River Walk Drive. It is located on the walking trail along Gilder Creek.</p>
+					<p><a href="https://goo.gl/maps/oQvy3KGFBTm" class="btn btn--filled" target="_blank">View Map</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section class="background--dark-primary text-light-primary">
+	<div class="shell constrain-page hard">
+		<div class="grid text-center soft-ends">
+			<div class="grid__item anchored-one-quarter lap-wide-one-quarter lap-one-half">
+				<h4 class="soft-half flush">4 Bedrooms</h4>
+			</div><div class="grid__item anchored-one-quarter lap-wide-one-quarter lap-one-half">
+				<h4 class="soft-half flush">3&frac12; Bathrooms</h4>
+			</div><div class="grid__item anchored-one-quarter lap-wide-one-quarter lap-one-half">
+				<h4 class="soft-half flush">3,657 Sqft</h4>
+			</div><div class="grid__item anchored-one-quarter lap-wide-one-quarter lap-one-half">
+				<div class="soft-half">
+					<h4 class="flush">$460,000</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell hard">
+		<div class="grid flush">
+			<div class="grid__item lap-and-up-one-third hard">
+				<a href="http://207mercer.com/photos/207mercer-9733.jpg" class="clickable" data-lightbox="image-1" data-title="Front Yard">
+					<div class="ratio--square handheld-ratio--shuare background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9733.jpg');"></div>
+				</a>
+			</div><div class="grid__item lap-and-up-one-third hard">
+				<a href="http://207mercer.com/photos/207mercer-9757.jpg" class="clickable" data-lightbox="image-1" data-title="Back Patio">
+					<div class="ratio--square handheld-ratio--shuare background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9757.jpg');"></div>
+				</a>
+			</div><div class="grid__item lap-and-up-one-third hard">
+				<a href="http://207mercer.com/photos/207mercer-9761.jpg" class="clickable" data-lightbox="image-1" data-title="Front Stoop">
+					<div class="ratio--square handheld-ratio--shuare background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9761.jpg');"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell constrain-page">
+		<div class="grid handheld-text-center">
+			<div class="grid__item lap-and-up-one-third text-center handheld-push-half-bottom">
+				<h3>Features</h3>
+				<ul class="bulletless-list">
+					<li>Stainless Steel Appliances</li>
+					<li>Washer &amp; Dryer</li>
+					<li>Gas Fireplace</li>
+					<li>Tankless Water Heater</li>
+					<li>Recessed Lighting</li>
+					<li>Crown Moulding</li>
+					<li>Dual-Zone HVAC</li>
+					<li>Garage Utility Sink</li>
+					<li>Tilt-Out Windows</li>
+				</ul>
+			</div><div class="grid__item lap-and-up-one-third text-center handheld-push-half-bottom">
+				<h3>Floor Plan</h3>
+				<p><a href="http://207mercer.com/207MercerLayout.pdf" class="btn btn--filled">View Floor Plan</a></p>
+			</div><div class="grid__item lap-and-up-one-third text-center">
+				<h3>Schools</h3>
+				<ul class="bulletless-list">
+					<li>Rudolph Gordon Elementary School<br><b>4.9 mi &middot; <a href="https://www.greenville.k12.sc.us/gordon/" target="_blank">Website</a></b></li>
+					<li>Riverside Middle School<br><b>11.7 mi &middot; <a href="https://www.greenville.k12.sc.us/rms/" target="_blank">Website</a></b></li>
+					<li>Mauldin High School<br><b>7.2 mi &middot; <a href="https://www.greenville.k12.sc.us/mauldinh/" target="_blank">Website</a></b></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell hard">
+		<div class="grid flush">
+			<div class="grid__item lap-and-up-one-third hard">
+				<a href="http://207mercer.com/photos/207mercer-9767.jpg" class="clickable" data-lightbox="image-1" data-title="Street View">
+					<div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9767.jpg');"></div>
+				</a>
+			</div><div class="grid__item lap-and-up-one-third hard">
+				<a href="http://207mercer.com/photos/207mercer-9692.jpg" class="clickable" data-lightbox="image-1" data-title="Back Patio">
+					<div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9692.jpg');"></div>
+				</a>
+			</div><div class="grid__item lap-and-up-one-third hard">
+				<a href="http://207mercer.com/photos/207mercer-9673.jpg" class="clickable" data-lightbox="image-1" data-title="Back Yard Sunset">
+					<div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9673.jpg');"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell hard">
+		<div class="grid grid--rev floating floating--left flush">
+			<div class="grid__item floating__item lap-and-up-one-half hard">
+				<div class="soft">
+					<div class="palm-wide-soft-ends">
+						<h2 class="handheld-text-center">Home Tour</h2>
+						<p class="text-larger flush"><b>This 2,920 square foot home</b> opens to a multi-purpose room on the left. Currently used as a home office, it could also be a formal living room. Next is a large formal dining room, big enough to accommodate furniture and guests. Further down the hall is the spacious family room which includes a bump-out that houses a gas fireplace and a TV pre-wire that connects to a hidden media closet.</p>
+					</div>
+				</div>
+			</div><div class="grid__item floating__item lap-and-up-one-half hard">
+				<a href="http://207mercer.com/photos/207mercer-9816.jpg" class="clickable" data-lightbox="image-1" data-title="Study/Office"><div class="anchored-ratio--landscape lap-wide-ratio--landscape lap-ratio--shuare handheld-ratio--shuare background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9816.jpg');"></div></a>
+				<a href="http://207mercer.com/photos/207mercer-9829.jpg" class="clickable" data-lightbox="image-1" data-title="Dining Room"><div class="anchored-ratio--landscape lap-wide-ratio--landscape lap-ratio--shuare handheld-ratio--shuare background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9829.jpg');"></div></a>
+				<a href="http://207mercer.com/photos/207mercer-9842.jpg" class="clickable" data-lightbox="image-1" data-title="Family Room"><div class="anchored-ratio--landscape lap-wide-ratio--landscape lap-ratio--shuare handheld-ratio--shuare background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9842.jpg');"></div></a>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell background--dark-tertiary text-light-primary hard">
+		<div class="grid floating floating--left flush">
+			<div class="grid__item floating__item lap-and-up-one-half hard">
+				<div class="soft">
+					<p class="palm-wide-soft-ends text-larger flush"><b>The kitchen is open to the family room</b> to create one open space that is <i>perfect</i> for large gatherings and enables meal prep without being separated from friends and family. The large kitchen features extensive granite countertops, stainless steel appliances, a massive gourmet island, and a morning room attached to serve as a casual dining space or sunroom. A door opens to an extended, charming patio. A half bath completes the first floor.</p>
+				</div>
+			</div><div class="grid__item floating__item lap-and-up-one-half hard">
+				<a href="http://207mercer.com/photos/207mercer-9844.jpg" class="clickable" data-lightbox="image-1" data-title="Family Room/Kitchen"><div class="anchored-ratio--thin lap-wide-ratio--landscape lap-ratio--shuare handheld-ratio--landscape background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9844.jpg');"></div></a>
+				<a href="http://207mercer.com/photos/207mercer-9837.jpg" class="clickable" data-lightbox="image-1" data-title="Kitchen"><div class="anchored-ratio--thin lap-wide-ratio--landscape lap-ratio--shuare handheld-ratio--landscape background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9837.jpg');"></div></a>
+				<a href="http://207mercer.com/photos/207mercer-9851.jpg" class="clickable" data-lightbox="image-1" data-title="Morning Room"><div class="anchored-ratio--thin lap-wide-ratio--landscape lap-ratio--shuare handheld-ratio--landscape background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9851.jpg');"></div></a>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell hard">
+		<div class="grid grid--rev floating floating--left flush">
+			<div class="grid__item floating__item lap-and-up-one-half hard">
+				<div class="soft">
+					<p class="palm-wide-soft-ends text-larger flush"><b>The second level includes four large bedrooms,</b> an easily accessible laundry room, and a central loft for TV or a kids playroom. Retreat to the generous master bedroom with two large walk in closets, tray ceiling, and a luxurious tiled master bath with double bowl vanity.</p>
+				</div>
+			</div><div class="grid__item floating__item lap-and-up-one-half hard">
+				<a href="http://207mercer.com/photos/207mercer-9884.jpg" class="clickable" data-lightbox="image-1" data-title="Master Bedroom"><div class="anchored-ratio--landscape lap-wide-ratio--landscape lap-ratio--square handheld-ratio--shuare background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9884.jpg');"></div></a>
+
+				<div class="grid flush">
+					<div class="grid__item lap-and-up-one-half hard">
+						<a href="http://207mercer.com/photos/207mercer-9887.jpg" class="clickable" data-lightbox="image-1" data-title="Master Bathroom"><div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9887.jpg');"></div></a>
+					</div><div class="grid__item lap-and-up-one-half hard">
+						<a href="http://207mercer.com/photos/207mercer-9891.jpg" class="clickable" data-lightbox="image-1" data-title="Master Shower"><div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9891.jpg');"></div></a>
+					</div><div class="grid__item lap-and-up-one-half hard">
+						<a href="http://207mercer.com/photos/207mercer-9867.jpg" class="clickable" data-lightbox="image-1" data-title="Upstairs Loft"><div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9867.jpg');"></div></a>
+					</div><div class="grid__item lap-and-up-one-half hard">
+						<a href="http://207mercer.com/photos/207mercer-9866.jpg" class="clickable" data-lightbox="image-1" data-title="Laundry Room"><div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9866.jpg');"></div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell hard">
+		<div class="grid flush">
+			<div class="grid__item lap-and-up-one-half hard">
+				<a href="http://207mercer.com/photos/207mercer-9860.jpg" class="clickable" data-lightbox="image-1" data-title="Bedroom 2">
+					<div class="ratio--landscape handheld-ratio--landscape background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9860.jpg');"></div>
+				</a>
+			</div><div class="grid__item lap-and-up-one-quarter hard">
+				<a href="http://207mercer.com/photos/207mercer-9869.jpg" class="clickable" data-lightbox="image-1" data-title="Bedroom 3">
+					<div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9869.jpg');"></div>
+				</a>
+			</div><div class="grid__item lap-and-up-one-quarter hard">
+				<a href="http://207mercer.com/photos/207mercer-9897.jpg" class="clickable" data-lightbox="image-1" data-title="Bedroom 4">
+					<div class="ratio--square handheld-ratio--square background--cover" style="background-image: url('http://207mercer.com/photos/207mercer-9897.jpg');"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell background--dark-tertiary text-light-primary hard">
+		<div class="grid floating floating--left flush">
+			<div class="grid__item floating__item lap-and-up-one-half hard">
+				<div class="soft">
+					<p class="palm-wide-soft-ends text-larger flush"><b>Outside of the home,</b> enjoy being members of a close-knit community and visit the junior olympic size pool, playground, and walking trails for all your recreation needs.</p>
+				</div>
+			</div><div class="grid__item floating__item lap-and-up-one-half hard">
+				<a href="http://207mercer.com/photos/pool.2x1.jpg" class="clickable" data-lightbox="image-1" data-title="Community Pool"><div class="anchored-ratio--landscape portable-ratio--landscape handheld-ratio--landscape background--cover" style="background-image: url('http://207mercer.com/photos/pool.2x1.jpg');"></div></a>
+				<a href="http://207mercer.com/photos/park.2x1.jpg" class="clickable" data-lightbox="image-1" data-title="Community Park"><div class="anchored-ratio--landscape portable-ratio--landscape handheld-ratio--landscape background--cover" style="background-image: url('http://207mercer.com/photos/park.2x1.jpg');"></div></a>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section>
+	<div class="shell constrain-page">
+		<div class="grid text-center flush">
+			<div class="grid__item anchored-one-half portable-seven-twelfths handheld-one-whole hard">
+				<h3>Interested in more information?</h3>
+				<p>If you would like more information about the house, please contact us today.</p>
+				<p><a href="tel:+18643637921" class="btn btn--filled">Call Now: (864) 363-7921</a></p>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+{% include "_embeds/_page-content" %}
+
+<section class="background--dark-primary text-light-primary">
+	<div class="shell constrain-page">
+		<div class="grid text-center">
+			<div class="grid__item lap-and-up-one-half">
+				<h2>Contact</h2>
+				<h5 class="push-quarter-bottom">{{ entry.contactName }}</h5>
+				<p class="flush"><i class="fa fa-fw fa-phone" aria-hidden="true"></i> <a href="tel:+1{{ entry.contactPhone }}" class="remove-underline text-light-primary">{{ entry.contactPhone }}</a></p>
+				<p><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i> <a href="mailto:{{ entry.contactEmail }}" class="remove-underline text-light-primary">{{ entry.contactEmail }}</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

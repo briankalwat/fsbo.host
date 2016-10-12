@@ -1,1 +1,167 @@
 @import "junction-framework/lib/framework";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -.5px;
+}
+
+section {
+	background-color: $light-color;
+	padding: 0;
+}
+
+.shell {
+	margin: 0 auto;
+	padding: $base-spacing-unit*2 $base-spacing-unit $base-spacing-unit;
+	position: relative;
+	// box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+	@include media-query(handheld) {
+		padding: $base-spacing-unit $base-spacing-unit $base-spacing-unit/2;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+	@include media-query(handheld) {
+		margin-bottom: $base-spacing-unit/2;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: -.5px;
+}
+
+h1 {
+	@include media-query(handheld) {
+		font-size: map-get($fonts, h3);
+	}
+}
+
+ul {
+	margin-left: $base-spacing-unit/2;
+	margin-bottom: $base-spacing-unit/2;
+}
+
+.grid {
+	position: relative;
+}
+
+.tracked-wide {
+	letter-spacing: 8px;
+}
+
+.strong {
+	font-weight: 700;
+}
+
+.text-ultra-light {
+	font-weight: 200;
+}
+
+.text-light {
+	font-weight: 300;
+}
+
+.text-larger {
+	font-size: 120%;
+	line-height: 140%;
+
+	@include media-query(handheld) {
+		font-size: inherit;
+		line-height: inherit;
+	}
+}
+
+.hard {
+	padding: 0;
+}
+
+.flag {
+	position: absolute;
+	top: -10px;
+	left: 30px;
+	background-color: $secondary-color;
+	color: $light-color;
+	z-index: 10;
+	width: 140px;
+	text-align: center;
+	padding: $base-spacing-unit/2 0 $base-spacing-unit/4;
+	font-weight: 700;
+	@include radius(5px);
+
+	@include media-query(handheld) {
+		left: 50%;
+		margin-left: -70px;
+		padding: $base-spacing-unit/2.5 0 $base-spacing-unit/6;
+	}
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.bulletless-list {
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		margin-bottom: $base-spacing-unit/5;
+	}
+}
+
+.remove-underline {
+	text-decoration: none;
+}
+
+nav {
+	li {
+		a {
+			padding: $base-spacing-unit/2 $base-spacing-unit/4;
+		}
+	}
+}
+
+.clickable {
+	display: block;
+	cursor: pointer;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transition: all 0.15s ease;
+	}
+
+	&:before {
+		font: normal normal normal $base-font-size*3/1 FontAwesome;
+		content: '\f002';
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 2;
+		color: $light-color;
+		margin-top: -25px;
+		margin-left: -23px;
+		opacity: 0;
+		transition: all 0.25s ease;
+	}
+
+	&:hover {
+		&:after {
+			background-color: rgba(0,0,0,.5);
+		}
+
+		&:before {
+			opacity: 1;
+		}
+	}
+
+	@include media-query(palm) {
+		&:before, &:after {
+			display: none;
+		}
+	}
+}

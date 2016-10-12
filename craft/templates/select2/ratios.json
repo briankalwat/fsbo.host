@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Landscape",
+        "value": "ratio--landscape"
+    },
+    {
+        "label": "Short Square",
+        "value": "ratio--shuare"
+    },
+    {
+        "label": "Square",
+        "value": "ratio--square"
+    },
+    {
+        "label": "Portrait",
+        "value": "ratio--portrait"
+    },
+    {
+        "label": "Thin",
+        "value": "ratio--thin"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "label": "None",
+        "value": ""
+    },
+    {
+        "label": "Solid Light",
+        "value": "overlay--solid-light"
+    },
+    {
+        "label": "Solid",
+        "value": "overlay"
+    },
+    {
+        "label": "Solid Dark",
+        "value": "overlay--solid-dark"
+    },
+    {
+        "label": "Gradient",
+        "value": "overlay--gradient"
+    },
+    {
+        "label": "Gradient Left",
+        "value": "overlay--gradient-left"
+    },
+    {
+        "label": "Gradient Right",
+        "value": "overlay--gradient-right"
+    }
+]

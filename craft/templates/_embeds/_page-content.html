@@ -1,0 +1,27 @@
+{% for block in entry.pageContent %}{#
+
+	CUSTOM SECTIONS
+
+	#}{% if block.type == 'sectionStart' %}
+		<section class="{{ block.backgroundColor }}">
+			<!-- Custom Section Start -->
+			<div class="shell">
+				<div class="grid {# {% if block.condensedSection == 1 %}grid--condensed {% endif %} #} handheld-centered">
+	{% endif %}{#
+
+	#}{% if block.type == 'sectionEnd' %}
+				</div>
+			</div>
+			<!-- Custom Section End -->
+		</section>
+	{% endif %}{#
+
+	Body Element
+
+	#}{% if block.type == 'bodyElement' %}<div class="grid__item {{ block.width }} {% if block.alignment == 'center' %}centered {% else %}{{ block.alignment }} {% endif %}"><!-- Body Element -->
+		{% if block.enableCards == 1 %}<div class="card">{% endif %}
+		{% if block.body %}
+			{{ include(template_from_string(block.body)|raw) }}
+		{% endif %}
+		{% if block.enableCards == 1 %}</div>{% endif %}
+	</div>{% endif %}{% endfor %}

@@ -1,0 +1,42 @@
+[
+    {
+        "label": "Default",
+        "value": ""
+    },
+    {
+        "label": "Dark Primary",
+        "value": "dark-primary"
+    },
+    {
+        "label": "Dark Secondary",
+        "value": "dark-secondary"
+    },
+    {
+        "label": "Dark Tertiary",
+        "value": "dark-tertiary"
+    },
+    {
+        "label": "Light Primary",
+        "value": "light-primary"
+    },
+    {
+        "label": "Light Secondary",
+        "value": "light-secondary"
+    },
+    {
+        "label": "Light Tertiary",
+        "value": "light-tertiary"
+    },
+    {
+        "label": "Primary",
+        "value": "primary"
+    },
+    {
+        "label": "Secondary",
+        "value": "secondary"
+    },
+    {
+        "label": "Tertiary",
+        "value": "tertiary"
+    }
+]

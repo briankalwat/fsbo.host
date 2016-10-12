@@ -1,0 +1,34 @@
+[
+    {
+        "label": "Full Width",
+        "value": "one-whole"
+    },
+    {
+        "label": "One Half",
+        "value": "one-half"
+    },
+    {
+        "label": "One Third",
+        "value": "one-third"
+    },
+    {
+        "label": "Two Thirds",
+        "value": "two-thirds"
+    },
+    {
+        "label": "One Quarter",
+        "value": "one-quarter"
+    },
+    {
+        "label": "Three Quarters",
+        "value": "three-quarters"
+    },
+    {
+        "label": "Five Twelfths",
+        "value": "five-twelfths"
+    },
+    {
+        "label": "Seven Twelfths",
+        "value": "seven-twelfths"
+    }
+]
